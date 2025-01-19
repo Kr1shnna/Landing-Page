@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav-title">VOYAGE</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore the most beautiful destinations around the world.</p>
+            <a href="#destinations" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+<section id="destinations" class="destinations">
+    <h2>Top Destinations</h2>
+    <div class="destination-card">
+        <!-- Add image to destination 1 -->
+        <img src="paris.jpg" alt="Paris" class="destination-image">
+        <h3>Paris</h3>
+        <p>The city of lights and romance.</p>
+    </div>
+    <div class="destination-card">
+        <img src="bali.jpg" alt="Bali" class="destination-image">
+        <h3>Bali</h3>
+        <p>A tropical paradise for relaxation.</p>
+    </div>
+    <div class="destination-card">
+        <img src="tokyo.jpg" alt="Tokyo" class="destination-image">
+        <h3>Tokyo</h3>
+        <p>A bustling metropolis full of culture.</p>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="blog">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <img src="top.jpg" alt="Blog Post 1" class="blog-image">
+            <h3>Exploring the Best Travel Destinations</h3>
+            <p>Discover the top travel destinations around the world. From exotic beaches to historic cities, we have it all!</p>
+            <a href="blog-post1.html" class="read-more">Read More</a>
+        </div>
+        
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <img src="solo.jpg" alt="Blog Post 2" class="blog-image">
+            <h3>The Ultimate Travel Guide for Solo Travelers</h3>
+            <p>Planning a solo trip? Check out our ultimate guide to solo travel, with tips and advice for every traveler.</p>
+            <a href="blog-post2.html" class="read-more">Read More</a>
+        </div>
+        
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <img src="budget (1).jpg" alt="Blog Post 3" class="blog-image">
+            <h3>Budget-Friendly Travel Tips</h3>
+            <p>Learn how to travel on a budget with our money-saving tips. Discover affordable destinations and smart budgeting advice!</p>
+            <a href="blog-post3.html" class="read-more">Read More</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We’re passionate about helping you explore the world with ease, offering personalized travel experiences, expert advice, and curated recommendations to make every journey unforgettable.</p>
+        <p>Feel free to adjust it according to your company’s unique values and offerings!</p>
+    </section>
+
+    <!-- Login and Sign Up Section -->
+<section id="login-signup" class="login-signup">
+    <div class="form-container">
+        <!-- Login Form -->
+        <div id="login-form" class="form-box">
+            <h2>Login</h2>
+            <form action="#" method="POST">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="login-email" required placeholder="Enter your email">
+                
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" required placeholder="Enter your password">
+                
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </div>
+        
+        <!-- Sign Up Form -->
+        <div id="signup-form" class="form-box" style="display: none;">
+            <h2>Sign Up</h2>
+            <form action="#" method="POST">
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" name="signup-email" required placeholder="Enter your email">
+                
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="signup-password" required placeholder="Enter your password">
+                
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+                
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need help with bookings? Get in touch with us today!</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="insta.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Travel Agency</p>
+        <p>All rights reserved</p>
+    </footer>
+
+</body>
+</html>

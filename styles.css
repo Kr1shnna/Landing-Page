@@ -1,0 +1,365 @@
+/* General Reset */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+header {
+    background-color:#f4f4f4 ;
+    padding: 20px 0;
+}
+
+.nav-title{
+    position:absolute;
+    top: 20px;
+    left: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e0303;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 40px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:right;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color:#2e0303;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: url("opening.jpg"); /* Set your image path here */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Ensure the image covers the whole hero section */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Make text color white for better contrast */
+    text-align: center;
+    padding: 100px 20px; /* Add padding to space the content inside */
+    height: 100vh; /* Make the hero section fill the viewport height */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensure the text appears above the background image */
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff7f50;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff6347;
+}
+
+
+.cta-button {
+    background-color: #ff7f50;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff6347;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.destinations h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.destination-card {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.destination-image {
+    width: 100%; /* Make the image fill the width of the card */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Rounded corners for a soft look */
+    margin-bottom: 15px; /* Space between the image and the title */
+}
+
+.destination-card h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.destination-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Blog Section */
+.blog {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between; /* Space out the blog posts */
+    flex-wrap: wrap; /* Allow the posts to wrap to the next line on smaller screens */
+    gap: 20px; /* Add some space between the posts */
+}
+
+.blog-post {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    width: 30%; /* Make each post take up 30% of the width */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure the image doesn't overflow the card */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px); /* Slightly lift the post on hover */
+}
+
+.blog-image {
+    width: 100%; /* Ensure the image takes up the full width of the blog post */
+    height: 200px;
+    object-fit: cover; /* Ensure the image doesn't get distorted */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ff7f50; /* Button color */
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Underline the link when hovered */
+}
+
+
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* General Styling for the Form Section */
+/* General Styling for the Form Section */
+.login-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('van.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    padding: 20px;
+    background-attachment: fixed; /* Optional: Makes the background fixed while scrolling */
+}
+
+
+.form-container {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(203, 83, 83, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px; /* Form width */
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the forms */
+.form-box {
+    display: none; /* Hide both forms initially */
+}
+
+/* Show Login Form by default */
+#login-form {
+    display: block;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.social-icon {
+    width: 40px; /* Set the size of the icon */
+    height: 40px;
+    object-fit: cover; /* Ensures the icons don't get distorted */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Enlarge the icon on hover */
+}
+
+a {
+    display: inline-block;
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
